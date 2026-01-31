@@ -17,6 +17,13 @@ def raiz():
 def listar_usuarios():
         return usuarios
 
+@app.get("/usuarios/{usuario_id}")
+def buscar_usuario(usuario_id:int):
+      for usuario in usuarios:
+            if usuario in usuarios:
+                  return usuario
+      raise HTTPException(status_code=404, detail="Usuario nao encontrado.")
+
 @app.post("/usuarios") # rota - Post recebe alguma coisa do site que tá chamando ele, ele guarda o dado que está recebendo
 def criar_usuario(usuario: dict = Body(...)): # ===> usuario = {"id": 4, "nome": "Ana", "email": "ana@email"}
       id = usuario.get("id")

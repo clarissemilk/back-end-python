@@ -91,7 +91,7 @@ source venv/bin/activate
 
 # No Windows:
 # venv\Scripts\activate
-
+_sistema_v2
 # 3. Executar o sistema normalmente
 python3 -m BEP-016.crud_sistema_v2.sistema
 
