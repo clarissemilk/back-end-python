@@ -32,7 +32,7 @@ sistema_cadastro/
 │   └── pessoaView.py
 │
 ├── integracoes/
-│   └── (arquivos auxiliares, se aplicável)
+│   └── (arquivos auxiliares)
 │
 ├── main.py
 └── README.md
